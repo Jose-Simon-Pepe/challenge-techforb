@@ -1,0 +1,49 @@
+## Introduccion y objetivos
+
+Este proyecto corresponde al "Challenge Tecnico" enviado por Techforb a Jose Pepe mediante Linkedin.
+En este se solicita desarrollar el Backend de un sitio de categoria "Ecommerce" llamado "Unicomer". Para lo cual, se debe:
+
+  ○ Realizar los endpoints para obtener los datos necesarios de forma dinámica. Ejemplos:
+    ○ Obtener Balance
+    ○ Obtener Últimas transacciones
+    ○ Obtener Tarjetas
+    ○ Obtener Menú de opciones
+  ● Implementar sistema de registro y login de usuarios.
+  ● Persistir y acceder a los datos a través de una base de datos.
+  ● Crear servicios para poder manipular los datos, realizando operaciones con los mismos.
+        Ejemplos:
+        ○ Realizar transferencia
+        ○ Extraer dinero
+        ○ Depositar dinero
+  ● Realizar validaciones y devolver mensajes con la información necesaria (datos incorrectos,
+dinero insuficiente, etc.).
+
+Finalmente, la entrega consiste en:
+  ○ Link al repositorio del servidor
+  ○ Link a un Deploy en algun servicio web 
+
+## Limitaciones y convenciones
+  
+Segun los requisitos del challengue, debe usarse Java Spring Boot y Python para el desarrollo.
+
+## Decisiones iniciales
+
+Dado que se indica que "se necesita fuerte conocimiento en backend con python y spring boot para integraciones", se asume que:
+  . Hay comunicacion entre java y python
+  . Java Spring Boot sera usado para generar el scaffold y desplegar el servidor
+  . Python sera usado para ciertos servicios de manipulacion de datos
+
+Para este contexto propongo:
+  . El analisis y documentacion de los requerimientos funcionales mediante la metodologia BDD
+  . La implementacion de features mediante la metodologia TDD
+  . El uso de una capa de controladores en Java para las peticiones (Generar endpoints) 
+
+## Vista de despliegue
+
+-
+
+## Decisiones de arquitectura
+
+## Riesgos y deuda tecnica
+
+## Glosario del lenguaje Obicuo
