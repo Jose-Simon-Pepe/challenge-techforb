@@ -1,0 +1,12 @@
+# Historias de usuario para el challenge
+
+. Como usuario, quiero obtener mi balance para conocer mi situacion economica
+. Como usuario, quiero obtener mis ultimas transacciones
+. Como usuario, quiero obtener mis tarjetas
+. Como usuario, quiero que el sistema me presente las opciones
+. Como usuario, quiero registrarme en el sistema
+. Como usuario, quiero iniciar sesion en el sistema
+. Como usuario, quiero cerrar sesion en el sistema
+. Como usuario, quiero realizar una transferencia a un recibidor
+. Como usuario, quiero extraer mi dinero
+. Como usuario, quiero depositarme dinero
