@@ -1,13 +1,10 @@
-FROM ubuntu:latest AS build
-RUN apt-get update
-RUN apt-get install openjdk-17-jdk -y
-RUN apt-get install maven -y
-COPY . .
+FROM maven:3.8.3-openjdk-17 AS build
+WORKDIR /app
+COPY . /app/
 RUN mvn clean package
-RUN java -jar server/target/server.jar
 
-FROM openjdk:17-jdk-slim
+FROM openjdk:17-alphine
+WORKDIR /app
+COPY --from=build /app/target/*.jar /app/app.jar
 EXPOSE 8080
-COPY --from=build /server/target/server.jar app.jar
-
 ENTRYPOINT ["java","-jar","app.jar"]
