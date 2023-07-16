@@ -14,10 +14,9 @@ public class ServerApplication {
 
 }
 
-@RestController
 class DemoRestController{
 	@GetMapping("/hi")
-	fun hello() : String {
+	public String hello(){
 		return "Hiiii";
 	}
 }
